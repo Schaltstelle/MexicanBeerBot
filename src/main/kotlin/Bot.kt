@@ -23,8 +23,6 @@ class Bot : TelegramLongPollingBot() {
     private val love = listOf("unix", "linux", """(mexic\w+)""", "intelliJ", "cake", "sleep", "schlafen").map { Regex(it) }
     private val taste = listOf("taste", "geschmack", "durst", "drink", "hungry", "hunger", "eat", "essen")
 
-    override fun getBotToken() = "965774486:AAECrc6YkjNXk8MorP2Qd_jkPG-31pghaoI"
-    override fun getBotUsername() = "MexicanBeerBot"
     override fun onUpdateReceived(update: Update) {
         if (update.message?.text != null) {
             val text = update.message.text.toLowerCase()
