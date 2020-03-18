@@ -6,7 +6,6 @@ import org.telegram.telegrambots.meta.api.methods.send.SendPhoto
 import org.telegram.telegrambots.meta.api.objects.Update
 import kotlin.random.Random
 
-
 fun main() {
     ApiContextInitializer.init()
     TelegramBotsApi().apply {
@@ -57,13 +56,14 @@ class Bot : TelegramLongPollingBot() {
             Joke("", "bigfoot.jpg"),
             Joke("", "buy-god.jpg"),
             Joke("", "touch-face.jpg"),
+            Joke("", "suite.jpg"),
             Joke("", "flirt.jpg"),
             Joke("Social distancing in the 1750s.", "old-distance.jpg"),
             Joke("", "borg.jpg")
     )
 
-    override fun getBotToken() = System.getenv("MEXICAN_BEER_BOT_TOKEN")
-    override fun getBotUsername() = System.getenv("MEXICAN_BEER_BOT_USER")
+    override fun getBotToken() = System.getenv("MEXICAN_BEER_BOT_TOKEN") ?: System.getenv("TOKEN")
+    override fun getBotUsername() = System.getenv("MEXICAN_BEER_BOT_USER") ?: System.getenv("USER")
 
     override fun onUpdateReceived(update: Update) {
         if (update.message?.text != null) {
