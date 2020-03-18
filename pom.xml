@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>guru.nidi</groupId>
+        <artifactId>guru-nidi-parent-pom</artifactId>
+        <version>1.1.29</version>
+        <relativePath />
+    </parent>
+
+    <artifactId>mexican-beer-bot</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>${project.artifactId}</name>
+    <description>A telegram bot about mexican beer.</description>
+    <url>https://github.com/nidi3/MexicanBeerBot</url>
+    <inceptionYear>2020</inceptionYear>
+
+    <properties>
+        <dependency-check.fail-on-error>false</dependency-check.fail-on-error>
+        <kotlin.version>1.3.70</kotlin.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <scm>
+        <connection>scm:git:https://github.com/nidi3/MexicanBeerBot</connection>
+        <developerConnection>scm:git:https://github.com/nidi3/MexicanBeerBot</developerConnection>
+        <url>https://github.com/nidi3/MexicanBeerBot</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots</artifactId>
+            <version>4.6</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
