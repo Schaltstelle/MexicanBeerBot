@@ -1,0 +1,20 @@
+val quotes = listOf(
+        "hähähä",
+        "I'm going viral!",
+        "Drink Corona",
+        "dumdidumm",
+        "Bored at the home office?",
+        "May I help you?",
+        "Or do you prefer Heineken!?",
+        "Hatschi!",
+        "Stay away from me!",
+        "The cake is a lie!",
+        "42",
+        "How many roads must a man walk down?",
+        "Let there be rock!",
+        "Have you tried turning it off and on again?",
+        "I'm socially very distant",
+        "Don't worry, be happy!",
+        "In 80 days around the world",
+        "May I visit you?"
+)
